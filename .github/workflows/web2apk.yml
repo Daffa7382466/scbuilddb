@@ -5,13 +5,33 @@ on:
     inputs:
       web_url:
         description: 'URL Website'
-        required: true
+        required: false
+        type: string
+
       app_name:
         description: 'Nama Aplikasi'
-        required: true
+        required: false
+        type: string
+
       icon_url:
-        description: 'Icon Url'
-        required: true
+        description: 'Icon URL'
+        required: false
+        type: string
+
+      zip_url:
+        description: 'ZIP URL'
+        required: false
+        type: string
+
+      tag:
+        description: 'Release Tag'
+        required: false
+        type: string
+
+      build_type:
+        description: 'Build Type'
+        required: false
+        type: string
 
 jobs:
   build:
